@@ -12,29 +12,29 @@ char.draw_now(400, 90)
 
 while(True):
 
-    for i in range(0, 100):
+    for i in range(0, 200):
         clear_canvas_now()
         char.draw_now(400 + i, 90)
         i = i + 2
 
-    for i in range(0, 50):
+    for i in range(0, 100):
         clear_canvas_now()
-        char.draw_now(400 + 100, 90 + i)
+        char.draw_now(400 + 200, 90 + i)
         i = i+2
 
-    for i in range(0,200):
+    for i in range(0,400):
         clear_canvas_now()
-        char.draw_now(400 + 100 - i, 90 + 50)
+        char.draw_now(400 + 200 - i, 90 + 100)
         i = i+2
-
-    for i in range(0, 50):
-        clear_canvas_now()
-        char.draw_now(400 + 100 - 200, 90 + 50 - i)
-        i = i + 2
 
     for i in range(0, 100):
         clear_canvas_now()
-        char.draw_now(400 + 100 - 200 + i, 90 + 50 - 50)
+        char.draw_now(400 + 200 - 400, 90 + 100 - i)
+        i = i + 2
+
+    for i in range(0, 200):
+        clear_canvas_now()
+        char.draw_now(400 + 200 - 400 + i, 90)
         i = i + 2
 
 
@@ -43,38 +43,28 @@ while(True):
 
 
     for x in range(0, 50):
-        for y in range(0, 50):
             clear_canvas_now()
-            char.draw_now(400 + x, 90 + y)
+            char.draw_now(400 + x, 90 + x)
             x = x + 2
-            y = y + 2
+
+    for x in range(0, 50):
+            clear_canvas_now()
+            char.draw_now(400 + 50 - x, 90 + 50 + x)
+            x = x + 2
 
 
     for x in range(0, 50):
-        for y in range(0, 50):
             clear_canvas_now()
-            char.draw_now(400 + 50 - x, 90 + 50 + y)
+            char.draw_now(400 - x, 90 + 50 + 50 - x)
             x = x + 2
-            y = y + 2
 
 
     for x in range(0, 50):
-        for y in range(0, 50):
             clear_canvas_now()
-            char.draw_now(400 - x, 90 + 50 + 50 - y)
+            char.draw_now(400 - 50 + x, 90 + 50 - x)
             x = x + 2
-            y = y + 2
 
 
-    for x in range(0, 50):
-        for y in range(0, 50):
-            clear_canvas_now()
-            char.draw_now(400 - 50 + x, 90 + 50 - y)
-            x = x + 2
-            y = y + 2
-
-
-    delay(2)
             
     
 
